@@ -5,7 +5,17 @@
 
 def main():
     # 이곳에 코드를 작성해주세요!
+    n = int(input())
 
+    sum = 0
+    for i in range(1, n + 1):
+        sum += i
+    print(sum)
+
+    sum = 1
+    for i in range(1, n + 1):
+        sum *= i
+    print(sum)
     return
 
 

@@ -5,7 +5,8 @@
 
 def main():
     # 이곳에 코드를 작성해주세요!
-
+    s = input()
+    print(f"{s[2]}{s[1]}{s[0]}")
     return
 
 

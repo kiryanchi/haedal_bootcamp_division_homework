@@ -5,7 +5,13 @@
 
 def main():
     # 이곳에 코드를 작성해주세요!
+    c = input()
 
+    mother = ['a', 'e', 'i', 'o', 'u']
+    if c in mother:
+        print('O')
+    else:
+        print('X')
     return
 
 

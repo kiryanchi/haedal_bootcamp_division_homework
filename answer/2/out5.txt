@@ -1,2 +1,2 @@
-할인
-탑승
+DISCOUNT
+BOARD
