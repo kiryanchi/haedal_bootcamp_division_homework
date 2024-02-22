@@ -1,4 +1,5 @@
 name: 채점
+run-name: Python 으로 채점
 
 on:
   push:
