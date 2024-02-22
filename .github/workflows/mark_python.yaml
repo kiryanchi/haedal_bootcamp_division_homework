@@ -7,7 +7,7 @@ on:
 
 jobs:
   python:
-    if: ${{ startsWith(github.event.head_commit.message, 'python') }}
+    if: ${{ contains(github.event.head_commit.message, 'python') }}
     runs-on: ubuntu-latest
     steps:
       - name: 브랜치 가져오기
@@ -24,7 +24,7 @@ jobs:
       - name: 파이썬 채점 시작
         run: ./grade.sh
   c:
-    if: ${{ startsWith(github.event.head_commit.message, 'c') }}
+    if: ${{ contains(github.event.head_commit.message, 'c') }}
     runs-on: ubuntu-latest
     steps:
       - name: 브랜치 가져오기
