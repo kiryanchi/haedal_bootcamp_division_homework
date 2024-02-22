@@ -24,7 +24,7 @@ jobs:
       - name: 파이썬 채점 시작
         run: ./grade.sh
   c:
-    if: contains('c', github.event.commits.message)
+    if: contains('c', github.event.commits[0].message)
     runs-on: ubuntu-latest
     steps:
       - name: 브랜치 가져오기
