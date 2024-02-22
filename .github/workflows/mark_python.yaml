@@ -1,5 +1,5 @@
 name: 채점
-run-name: 채점 결과 - ${{ github.event.status.updated_at }}
+run-name: 채점 결과 - ${{ github.event.head_commit.timestamp }}
 
 on:
   push:
