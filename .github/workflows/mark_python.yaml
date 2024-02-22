@@ -7,7 +7,7 @@ on:
 
 jobs:
   python:
-    if: contains('python', github.event.commits.message)
+    if: contains('python', github.event.commits[0].message)
     runs-on: ubuntu-latest
     steps:
       - name: 브랜치 가져오기
