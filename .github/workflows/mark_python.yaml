@@ -1,4 +1,4 @@
-name: 채점
+name: ${{ github.event.head_commit.message }} 
 run-name: 채점 결과 - ${{ github.event.head_commit.timestamp }}
 
 on:
