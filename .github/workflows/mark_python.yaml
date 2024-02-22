@@ -21,18 +21,3 @@ jobs:
       
       - name: 파이썬 채점 시작
         run: ./grade.sh
-  
-  c:
-    runs-on: ubuntu-latest
-    steps:
-      - name: 브랜치 가져오기
-        uses: actions/checkout@v4
-      
-      - name: C 설치
-        uses: rlalik/setup-cpp-compiler@master
-        
-      - name: 채점 스크립트 권한 추가
-        run: chmod +x ./grade.sh
-      
-      - name: C 채점 시작
-        run: ./grade.sh c
